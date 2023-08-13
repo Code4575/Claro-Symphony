@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    text-shadow: 3px 3px 3px rgb(41, 38, 38);
+}
+
+body {
+    text-align:center;
+    color: rgb(242, 10, 10);
+    background-image: url(image/bkg2.jpg);
+background-size: 100% 145%;
+}
+
+
+
+
+h1 {
+    
+    font-size: 6rem;
+    padding: 50px 80px 80px 80px;
+}
+
+.set {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 3% auto;
+
+
+}
+
+.active {
+    animation: anim 1s forwards;
+}
+
+button:active {
+    animation: anim 1s forwards;
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.drum
+{
+    float: left;
+    /* width: 180px; */
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1;
+    font-weight: 800;
+    color: hsl(229, 63%, 59%);
+    text-shadow: 1px  #18a5d4;
+    border: 10px #435d66;
+    height: 200px;
+    margin: 70px;
+    mix-blend-mode:multiply;
+    /* text-align; */
+    padding: 0vh;
+
+
+}
+
+
+
+
+
+/* .drum::before
+{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    height: 50px;
+    width: 400px;
+    transform: perspective(80px) rotate(-120deg);
+    filter: blur();
+} */
+
+.active, .drum:hover
+{
+    background-color: gold;
+    box-shadow: 0 0 26px 1px gold;
+    border: 1px gold;
+}
+
+
+
+footer p {
+    color: rgb(10, 9, 9);
+    font-size: 4vh;
+    text-shadow: none;
+    padding:13vh 5vh 5vh 5vh;
+    font-style: oblique;
+}

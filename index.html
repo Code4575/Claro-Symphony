@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Claro Symphony</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+
+    />
+  </head>
+
+  <body>
+    <h1 id="title">Claro Symphony</h1>
+
+    <div class="set">
+      <button class="pg drum"><a href="http://127.0.0.1:5500/project/guitar_new.html"><img src="image/guitarrr.jpg" height="200" width="300"></a><p>Guitar</p></button>
+      <button class="pd drum"><a href="http://127.0.0.1:5500/project/drum_new.html"><img src="image/image6.png" width="295" height="200"></a><p>Drum</p></button>
+      <button class="pp drum"><a href="http://127.0.0.1:5500/project/piano_new.html"><img src="image/piano11.jpeg" width="295" height="200"></a><p>Piano</p></button>
+    </div>
+    <footer>
+      
+      <p>_Created by Shivangi Raj_</p>
+    </footer>
+    <script>
+      var header = document.getElementById("set");
+      var drums = header.getElementsByClassName("drum");
+      for(var i=0; i < drums.length; i++)
+      {
+        drums[i].addEventListener("click", function()
+        {
+          var current = 
+          document.getElementsByClassName("active");
+          current[0].className=
+          current[0].className.replace("active","");
+          this.className += "active";
+        });
+      }
+    </script>
+  </body>
+</html>
+
